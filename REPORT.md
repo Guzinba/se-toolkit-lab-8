@@ -201,7 +201,6 @@ nanobot-1  | 2026-04-03 09:45:34.576 | INFO     | nanobot.agent.loop:run:280 - A
 ![Task 2B](screenshots/task2b_1.png)
 ![Task 2B](screenshots/task2b_2.png)
 ### WebSocket Test
-```bash
 python3 -c "
 import asyncio, json, websockets
 async def t():
@@ -256,8 +255,8 @@ Summary
 
 
 ## Task 3A — Structured logging
+![Task 3A](screenshots/task2b_2.png)
 (?i) PASS
-![Task 3A](screenshots/task3a_victorialogs.png)
 Happy-path
 backend-1  | 2026-04-03 14:31:31,346 INFO [lms_backend.main] [main.py:74] [trace_id=38432427b4e9c8b4c15a428ef13a8d45 span_id=863e6d09e8364ce9 resource.service.name=Learning Management Service trace_sampled=True] - request_completed
 backend-1  | 2026-04-03 14:31:31,553 INFO [lms_backend.main] [main.py:74] [trace_id=58e94e3861ce89ab47dff577fcd388ad span_id=761be64c8376fc49 resource.service.name=Learning Management Service trace_sampled=True] - request_completed
