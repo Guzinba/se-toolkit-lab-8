@@ -256,13 +256,22 @@ Summary
 
 
 ## Task 3A — Structured logging
+![Task 3A](screenshots/task3a_victorialogs.png)
+Happy-path
+backend-1  | 2026-04-03 14:31:31,346 INFO [lms_backend.main] [main.py:74] [trace_id=38432427b4e9c8b4c15a428ef13a8d45 span_id=863e6d09e8364ce9 resource.service.name=Learning Management Service trace_sampled=True] - request_completed
+backend-1  | 2026-04-03 14:31:31,553 INFO [lms_backend.main] [main.py:74] [trace_id=58e94e3861ce89ab47dff577fcd388ad span_id=761be64c8376fc49 resource.service.name=Learning Management Service trace_sampled=True] - request_completed
+backend-1  | 2026-04-03 14:31:31,614 INFO [lms_backend.main] [main.py:74] [trace_id=85b6c37957381acf5d72993c24c74643 span_id=2f37a51c6c9d6a75 resource.service.name=Learning Management Service trace_sampled=True] - request_completed
+backend-1  | 2026-04-03 14:31:31,631 INFO [lms_backend.main] [main.py:74] [trace_id=09265590bee78008ab8d1faf9cfd6651 span_id=8be70938bc8585b0 resource.service.name=Learning Management Service trace_sampled=True] - request_completed
+Error-path
+backend-1  |     raise last_error or exceptions.TargetServerAttributeNotMatched(
+backend-1  | socket.gaierror: [Errno -2] Name or service not known
 
-<!-- Paste happy-path and error-path log excerpts, VictoriaLogs query screenshot -->
 
 ## Task 3B — Traces
 
-<!-- Screenshots: healthy trace span hierarchy, error trace -->
-
+![Task 3A](screenshots/task3b_1.png)
+![Task 3A](screenshots/task3b_2.png)
+![Task 3A](screenshots/task3b_3.png)
 ## Task 3C — Observability MCP tools
 
 <!-- Paste agent responses to "any errors in the last hour?" under normal and failure conditions -->

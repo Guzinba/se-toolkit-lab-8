@@ -21,7 +21,7 @@ members = [
 mcp-lms = { workspace = true, editable = true }
 
 # Task 1 — uncomment after you create the nanobot/ project.
-# nanobot = { workspace = true, editable = true }
+nanobot = { workspace = true, editable = true }
 
 # Task 2B — uncomment after you add the webchat channel.
 # mcp-webchat = { workspace = true, editable = true }
